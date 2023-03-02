@@ -80,10 +80,6 @@
                 <hr/>
                 <h4> Classes e slides </h4>
                 <div class="agenda" id="tabela-aulas">
-                  <div class="agenda-row">
-                    <span class="cell agenda-header"> Date </span>
-                    <span class="cell agenda-header"> Class </span>
-                  </div>
                 </div> <!-- agenda -->
             </div>
         </div>
@@ -101,9 +97,9 @@
         disponivel em http://bl.ocks.org/ndarville/7075823.
         Foi adaptado para popular usando o formato estabelecido por mim -->
     <script type="text/javascript"charset="utf-8">
-          var weekday = ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
-          var month = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set",
-        "Out","Nov","Dez"];
+          var weekday = ["Sun","Mon","Tue","Wed","Thr","Fri","Sat"];
+          var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep",
+        "Oct","Nov","Dec"];
         d3.csv("./data_2023.csv", function(d){
 
           var tmp = new Date(d.data+"T00:00:00-03:00");
